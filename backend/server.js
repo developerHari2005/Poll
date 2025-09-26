@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 const server = http.createServer(app);
 
-const clientURL = process.env.CLIENT_URL || "http://localhost:3000";
+const clientURL = "https://poll-p03y.onrender.com";
 
 app.use(cors({
   origin: clientURL,
