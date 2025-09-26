@@ -5,7 +5,7 @@ import { logout, setKicked } from '../store/userSlice';
 
 let socket = null;
 
-const getSocketUrl = "https://poll-p03y.onrender.com"
+const getSocketUrl = () => "https://poll-p03y.onrender.com"
 
 export const connectSocket = (dispatch) => {
   const socketUrl = getSocketUrl();
